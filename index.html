@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMO</title>
+    <link rel="icon" href="TMOpng.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css//lightbox.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+</head>
+
+<body>
+    <header id="inicio">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/TMOpng.png" width="70" height="50" alt="" loading="lazy">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#inicio">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#clases">Clases<span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#contacto">Contacto <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#nosotros">Nosotros <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="galeria.html">Galeria <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="faq.html">FAQ <span class="sr-only">(current)</span></a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+        <br>
+        <br>
+    </header>
+
+    <div class="jumbotron jumbotron-fluid jumbo-tmo margin-0">
+        <div class="container">
+            <h1>TMO <small>Training Mode On</small></h1>
+            <p class="lead">Rutinas de entrenamiento grupales y personalizadas.</p>
+            <nav class="redes">
+                <a href="http://instagram.com/tmo_entrenamientos" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="whatsapp://send?text=Hola, quería realizar la siguiente consulta... &phone=5491162071414"><i class="what fab fa-whatsapp"></i></a>
+            </nav>
+
+            <div id="clases"></div>
+        </div>
+    </div>
+
+
+
+    <main>
+        <!--Clases-->
+        <section>
+            <div class="clases">
+                <h3>Nuestras Clases</h3>
+
+                <div class="personalizadas">
+                    <h3>Clases Grupales</h3>
+                    <p>Entrenamiento dos veces por semana en el Rosedal de Palermo los días Martes y Jueves de 19 a 20.30hs y los Sábados se realiza el tercer estímulo semanal de manera virtual.</p>
+
+                </div>
+
+                <div class="contenedor-clases">
+                    <div class="personalizadas">
+                        <h4>Clases Personalizadas ONLINE</h4>
+                        <p>Se envía planificación semanal escrita con videos explicativos, dependiendo de la cantidad de días programados según los objetivos personales de cada alumno, espacio y elementos.</p>
+                    </div>
+
+                    <div class="express">
+                        <h4>TMO Express</h4>
+                        <p>Nueva modalidad de clases a través de la app ZOOM, son clases de 40 min focalizadas a trabajos únicamente con nuestro cuerpo, sin necesidad de elementos. Aptas para todo público. </p>
+                    </div>
+                </div>
+
+                <div class="pagos">
+                    <h5>Formas de pago</h5>
+                    <ul>
+                        <li><i class="fas fa-money-bill-wave"></i>Efectivo</li>
+                        <li class="mercado"> <img src="img/version-vertical-pluma-small.png" alt=""></li>
+                        <li><i class="fas fa-university"></i>Tansferencia</li>
+                    </ul>
+                    <p>Consulta por los diferentes abonos.</p>
+                </div>
+                <a href="#contacto" class="btn-activate">Activate</a>
+
+            </div>
+
+        </section>
+        <!--Fin Clases-->
+
+        <!--Carousel-->
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="background-image:url('img/zoomfondo.jpg')">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Clases por ZOOM</h5>
+                        <p>Debido a la situacion actual todas las clases se realizan de manera virtual.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image:url('img/plancha.jpeg')">
+                    <div class="carousel-caption d-md-block plancha">
+                        <h5>Actualidad:</h5>
+                        <p>Se están dando 3 clases semanales, respetando días y horarios normales, a través de la app ZOOM que tienen una duración aproximada de 1hs. Las clases se realizan contemplando el espacio y material a disposición de los alumnos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+
+            <div id="contacto"></div>
+            <br>
+            <br>
+            <br>
+        </div>
+        <!--Fin Carousel-->
+
+        <!--Contacto-->
+
+        <div class="contenedor-contacto">
+
+            <div class="contacto-info">
+                <h2>Contáctanos</h2>
+                <ul>
+                    <li><a href="tel:1162071414"><i class="tel fas fa-phone-alt"></i><br>Tel.: 1162071414</a></li>
+                    <li><a href="whatsapp://send?text=Hola, quería realizar la siguiente consulta... &phone=5491162071414"><i class="what fab fa-whatsapp"></i><br>Whatsapp: 1162071414</a></li>
+                    <li><a href="mailto:juanmdluca@gmail.com?subject=Consulta"><i class="mail fas fa-envelope"></i><br>Email: juanmdluca@gmail.com</a></li>
+                </ul>
+                <div class="map" id="map"></div>
+
+            </div>
+
+            <div class="contacto-formulario">
+                <h3>Consultas</h3>
+                <div class="formulario">
+                    <form action="send.php" method="post">
+                        <p>
+                            <label for="">Nombre:</label>
+                            <input type="text" name="nombre" id="" required>
+                        </p>
+                        <p>
+                            <label for="">Email:</label>
+                            <input type="email" name="email" id="" required>
+                        </p>
+                        <p>
+                            <label for="">Telefono:</label>
+                            <input type="tel" name="telefono" id="" required>
+                        </p>
+                        <p>
+                            <label for="">Mensaje</label>
+                            <textarea name="comentario" id="" cols="30" rows="3" required></textarea>
+                        </p>
+                        <p>
+                            <input class="boton-enviar" type="submit" value="enviar">
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Fin Contacto-->
+    </main>
+
+    <hr>
+
+    <div class="card mb-3 contenedor-yo" style="max-width: auto;" id="nosotros">
+        <div class="row no-gutters">
+            <div class="col-md-2 foto-1">
+                <img src="img/JuanTMO.jfif" class="card-img" alt="...">
+            </div>
+            <div class="col-md-10">
+                <div class="card-body">
+                    <h5 class="card-title">Nosotros</h5>
+                    <p class="card-text">TMO está encabezado por el Profesor de Ed. Física Juan Martin De Luca recibido en el ISEF Nº 1 Dr. Enrique Romero Brest con amplia experiencia en el ámbito del entrenamiento, se destaca en su trabajo dos años como instructor de musculación
+                        y clases de Fitness y cuatro años como Jefe de la Dirección de Deportes de la Universidad de Belgrano donde se destacó en su rol de Entrenador del Running Team y del Representativo de Futbol, además de tener una vida personal ligada
+                        a la actividad física y deportiva.
+                    </p>
+                    <br>
+                    <p>TMO nace como un emprendimiento para mejorar el acondicionamiento físico y entender el entrenamiento como una mejora de nuestras capacidades físicas (fuerza, resistencia, velocidad, coordinación y más) sumado a una mejora de nuestras
+                        capacidades cognitivas (como la concentración, la voluntad, el foco, la perseverancia, entre otras), todo esto combinado con potenciar los valores humanos de entrenar en grupo, despejar la mente, divertirse y disfrutar de un entrenamiento
+                        al aire libre. </p>
+                    <p><span>Te esperamos!</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="barra-footer">
+            <div class="footer-texto">
+                <a href="index.html#clases">
+                    <h3>TMO <small>Training Mode On</small></h3>
+                </a>
+            </div>
+            <div class="footer-contacto">
+                <li><a href="mailto:juanmdluca@gmail.com?subject=Consulta"><i class="fas fa-envelope"></i><p>juanmdluca@gmail.com</p></a></li>
+                <li><a href="whatsapp://send?text=Hola, quería realizar la siguiente consulta... &phone=5491162071414"><i class="fab fa-whatsapp-square"></i><p>1162071414</p></a></li>
+                <li><a href="tel:1162071414"><i class="fas fa-phone-square-alt"></i><p>1162071414</p></a></li>
+            </div>
+
+
+        </div>
+        <div class="copy">
+            <p>©TMO Entrenamientos - 2020</p>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/c766f4457e.js" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js "></script>
+
+</body>
+
+</html>
